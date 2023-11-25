@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9189064611104331327}
   - component: {fileID: 3519323497639969624}
   - component: {fileID: -2184028790116129286}
-  - component: {fileID: 5861417350708829468}
+  - component: {fileID: 7445407425892391373}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Obstacle
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 39db7145c9eb87f438cc0e6f2ab99611, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f0b93d751f411f4ba105d0263365335, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a87f7cd3b2d6e4c99866365bab50b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &5861417350708829468
-BoxCollider2D:
+--- !u!60 &7445407425892391373
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -156,6 +156,27 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9583333, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.46875, y: -0.21875}
+      - {x: 0.4791667, y: -0.16666667}
+      - {x: 0.4791667, y: -0.0625}
+      - {x: 0.4375, y: -0.020833334}
+      - {x: 0.20833334, y: 0.052083336}
+      - {x: 0.15625, y: 0.114583336}
+      - {x: -0.10416667, y: 0.3541667}
+      - {x: -0.16666667, y: 0.3541667}
+      - {x: -0.3229167, y: 0.19791667}
+      - {x: -0.375, y: 0.125}
+      - {x: -0.4791667, y: 0.020833334}
+      - {x: -0.4791667, y: -0.0625}
+      - {x: -0.4375, y: -0.10416667}
+      - {x: -0.20833334, y: -0.10416667}
+      - {x: -0.21875, y: -0.13541667}
+      - {x: -0.17708334, y: -0.17708334}
+      - {x: -0.020833334, y: -0.3125}
+      - {x: 0.3125, y: -0.3125}
+      - {x: 0.33333334, y: -0.2916667}
+      - {x: 0.33333334, y: -0.27083334}
+      - {x: 0.40625, y: -0.28125}
+  m_UseDelaunayMesh: 0

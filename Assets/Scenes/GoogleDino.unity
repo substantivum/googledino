@@ -270,8 +270,6 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  jumpForce: 8
-  gravity: 19.62
   pc: {fileID: 426802910}
 --- !u!212 &426802902
 SpriteRenderer:
@@ -413,11 +411,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a255155f795de342b126287a7043974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  raycastLength: 0.55
+  rb: {fileID: 426802912}
   direction: {x: 0, y: 0}
-  jumpForce: 8
-  gravity: 19.62
-  readyJump: 0
+  jumpForce: 32
+  debugRay: 1
 --- !u!114 &426802911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,10 +442,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.02
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -458,9 +456,9 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &426802913
-BoxCollider2D:
+  m_Constraints: 5
+--- !u!60 &426802913
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -501,9 +499,34 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9166667, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.29465073, y: -0.08809677}
+      - {x: 0.29784426, y: 0.073911294}
+      - {x: 0.37740612, y: 0.081126496}
+      - {x: 0.37862825, y: 0.16193518}
+      - {x: 0.45833334, y: 0.16279301}
+      - {x: 0.46210226, y: 0.4008065}
+      - {x: 0.41954598, y: 0.48680913}
+      - {x: -0.0038736667, y: 0.48304033}
+      - {x: -0.04643043, y: 0.43859947}
+      - {x: -0.03988695, y: 0.16991389}
+      - {x: -0.08134413, y: 0.1686559}
+      - {x: -0.14274454, y: 0.12730375}
+      - {x: -0.33134413, y: 0.05119355}
+      - {x: -0.33500832, y: 0.16766131}
+      - {x: -0.42142996, y: 0.17064516}
+      - {x: -0.46210226, y: 0.12709409}
+      - {x: -0.46587119, y: -0.123220414}
+      - {x: -0.2899917, y: -0.2670645}
+      - {x: -0.2908818, y: -0.334328}
+      - {x: -0.24852514, y: -0.33521694}
+      - {x: -0.25387368, y: -0.5037688}
+      - {x: 0.13075814, y: -0.5018844}
+      - {x: 0.13175249, y: -0.42132527}
+      - {x: 0.12830114, y: -0.25551993}
+      - {x: 0.21419668, y: -0.087311804}
+  m_UseDelaunayMesh: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6110924645852049772}
   - component: {fileID: 7482435931584644084}
   - component: {fileID: -4050171701585967069}
-  - component: {fileID: -7296806161265074485}
+  - component: {fileID: 2616470367393677174}
   m_Layer: 0
   m_Name: Cactus_Large_Single
   m_TagString: Obstacle
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a87f7cd3b2d6e4c99866365bab50b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &-7296806161265074485
-BoxCollider2D:
+--- !u!60 &2616470367393677174
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -140,6 +140,16 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5208333, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.09721476, y: 0.50692964}
+      - {x: -0.13024187, y: 0.3232521}
+      - {x: -0.26561385, y: 0.21217826}
+      - {x: -0.2604167, y: -0.4166667}
+      - {x: -0.23958334, y: -0.5}
+      - {x: 0.21875, y: -0.5}
+      - {x: 0.2604167, y: -0.2916667}
+      - {x: 0.2673462, y: 0.30248588}
+      - {x: 0.11120949, y: 0.29235697}
+      - {x: 0.104457386, y: 0.5069295}
+  m_UseDelaunayMesh: 0

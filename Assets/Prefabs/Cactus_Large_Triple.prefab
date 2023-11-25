@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8111750021288435188}
   - component: {fileID: 5680888892218127571}
   - component: {fileID: 3431970539167108772}
-  - component: {fileID: -363830987085088678}
+  - component: {fileID: 6955055018131841143}
   m_Layer: 0
   m_Name: Cactus_Large_Triple
   m_TagString: Obstacle
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a87f7cd3b2d6e4c99866365bab50b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &-363830987085088678
-BoxCollider2D:
+--- !u!68 &6955055018131841143
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -131,15 +131,20 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5625, y: 1}
-    newSize: {x: 1.5625, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.5625, y: 1}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.7829492, y: 0.244597}
+  - {x: -0.62738323, y: 0.24668199}
+  - {x: -0.6247838, y: 0.45746335}
+  - {x: -0.57418454, y: 0.5030017}
+  - {x: -0.4175154, y: 0.5035791}
+  - {x: -0.033263475, y: 0.46618375}
+  - {x: 0.5748699, y: 0.5072966}
+  - {x: 0.78750193, y: 0.22771308}
+  - {x: 0.78277075, y: -0.5029118}
+  - {x: -0.79012185, y: -0.4992875}
+  - {x: -0.7860579, y: 0.24334699}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

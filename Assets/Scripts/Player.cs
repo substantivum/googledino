@@ -6,6 +6,8 @@ public class Player : Agent
 {
     [SerializeField]
     PlayerController pc;
+    [SerializeField]
+    GameManager gameManager;
 
     public override void Initialize()
     {
@@ -33,15 +35,15 @@ public class Player : Agent
 
     public override void OnEpisodeBegin()
     {
-        GameManager.Instance.Start();
+        gameManager.Start();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Obstacle") && GameManager.Instance.isRunning)
+        if (other.CompareTag("Obstacle") && gameManager.isRunning)
         {
             SetReward(-10.0f);
-            GameManager.Instance.GameOver();
+            gameManager.GameOver();
             EndEpisode();
         }
     }

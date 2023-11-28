@@ -12,8 +12,9 @@ public class Spawner : MonoBehaviour
         public float spawnChance;
     }
 
-    public static Spawner Instance { get; private set; }
-
+    //public static Spawner Instance { get; private set; }
+    [SerializeField]
+    GameManager gameManager;
 
     public SpawnableObject[] objects;
     public float minSpawnRate = 1f;
@@ -23,22 +24,13 @@ public class Spawner : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null)
-        {
-            DestroyImmediate(gameObject);
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(this);
-        }
-
         obs = new List<GameObject>();
     }
 
     private void OnEnable()
     {
-        Invoke(nameof(Spawn), Random.Range(minSpawnRate, maxSpawnRate));
+        //Invoke(nameof(Spawn), Random.Range(minSpawnRate, maxSpawnRate));
+        Spawn();
     }
 
     private void OnDisable()
@@ -54,8 +46,10 @@ public class Spawner : MonoBehaviour
         {
             if (spawnChance < obj.spawnChance)
             {
-                GameObject obstacle = Instantiate(obj.prefab);
-                obstacle.transform.position += transform.position;
+                GameObject obstacle = Instantiate(obj.prefab, transform);
+                Obstacles o = obstacle.GetComponent<Obstacles>();
+                o.spawner = this;
+                o.gameManager = gameManager;
                 obs.Add(obstacle);
                 break;
             }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
+    [SerializeField]
+    GameManager gameManager;
+
 
     private MeshRenderer meshRenderer;
 
@@ -13,7 +16,7 @@ public class Ground : MonoBehaviour
 
 
     private void Update() {
-        float speed = GameManager.Instance.gameSpeed / transform.localScale.x;
+        float speed = gameManager.gameSpeed / transform.localScale.x;
         meshRenderer.material.mainTextureOffset += Vector2.right * speed * Time.deltaTime;
     }
 }

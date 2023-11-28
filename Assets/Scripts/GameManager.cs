@@ -5,7 +5,7 @@ using UnityEngine.UI;
 [DefaultExecutionOrder(-1)]
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    //public static GameManager Instance { get; private set; }
 
     public float initialGameSpeed = 5f;
     public float gameSpeedIncrease = 0.1f;
@@ -23,26 +23,31 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI highScoreText;
 
     private float score;
+    private float highscore = 0;
 
     public bool isRunning { get; private set; }
 
-
-    private void Awake()
-    {
-        if (Instance != null) {
-            DestroyImmediate(gameObject);
-        } else {
-            Instance = this;
-            DontDestroyOnLoad(this);
-        }
+    public float GetPlayerXPos()
+    { 
+        return player.transform.position.x; 
     }
 
-    private void OnDestroy()
-    {
-        if (Instance == this) {
-            Instance = null;
-        }
-    }
+    //private void Awake()
+    //{
+    //    if (Instance != null) {
+    //        DestroyImmediate(gameObject);
+    //    } else {
+    //        Instance = this;
+    //        DontDestroyOnLoad(this);
+    //    }
+    //}
+
+    //private void OnDestroy()
+    //{
+    //    if (Instance == this) {
+    //        Instance = null;
+    //    }
+    //}
 
     public void Start()
     {
@@ -57,7 +62,7 @@ public class GameManager : MonoBehaviour
     {
         isRunning = true;
 
-        Spawner.Instance.ClearGame();
+        spawner.ClearGame();
 
         gameSpeed = initialGameSpeed;
         enabled = true;
@@ -93,11 +98,11 @@ public class GameManager : MonoBehaviour
 
     private void UpdateHightScore() {
 
-        float highscore = PlayerPrefs.GetFloat("highscore", 0);
+        //float highscore = PlayerPrefs.GetFloat("highscore", 0);
 
         if (score > highscore) {
             highscore = score;
-            PlayerPrefs.SetFloat("highscore", highscore);
+            //PlayerPrefs.SetFloat("highscore", highscore);
         }
 
         highScoreText.text = Mathf.FloorToInt(highscore).ToString("D5");

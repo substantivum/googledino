@@ -4,7 +4,6 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class AnimatedSprite : MonoBehaviour
 {
-
     public Sprite[] sprites;
     private SpriteRenderer spriteRenderer;
     private int frame;
@@ -34,6 +33,7 @@ public class AnimatedSprite : MonoBehaviour
         
         }
 
-        Invoke(nameof(Animate), 1f / GameManager.Instance.gameSpeed);
+        // Invoke(nameof(Animate), 1f / gameManager.gameSpeed);
+        Invoke(nameof(Animate), 1f / 5f);
     }
 }

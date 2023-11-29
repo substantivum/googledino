@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1701197696",
+        "python_version": "3.7.16 (default, Jan 17 2023, 16:06:28) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\ASUS\\miniconda3\\envs\\unity\\Scripts\\mlagents-learn dino_config.yaml --run-id=Run3 --force",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.6",
+        "end_time_seconds": "1701197701"
+    },
+    "total": 5.1396334,
+    "count": 1,
+    "self": 0.007045500000001148,
+    "children": {
+        "run_training.setup": {
+            "total": 0.1023963000000001,
+            "count": 1,
+            "self": 0.1023963000000001
+        },
+        "TrainerController.start_learning": {
+            "total": 5.030191599999999,
+            "count": 1,
+            "self": 0.00032029999999938497,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 5.0298623,
+                    "count": 1,
+                    "self": 5.0298623
+                },
+                "trainer_threads": {
+                    "total": 1.1999999998124622e-06,
+                    "count": 1,
+                    "self": 1.1999999998124622e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 7.800000000557361e-06,
+                    "count": 1,
+                    "self": 7.800000000557361e-06
+                }
+            }
+        }
+    }
+}

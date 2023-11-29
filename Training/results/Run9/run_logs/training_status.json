@@ -1,0 +1,56 @@
+{
+    "DinoBehavior": {
+        "checkpoints": [
+            {
+                "steps": 173737,
+                "file_path": "results\\Run9\\DinoBehavior\\DinoBehavior-173737.onnx",
+                "reward": null,
+                "creation_time": 1701284955.6741571,
+                "auxillary_file_paths": [
+                    "results\\Run9\\DinoBehavior\\DinoBehavior-173737.pt"
+                ]
+            },
+            {
+                "steps": 190762,
+                "file_path": "results\\Run9\\DinoBehavior\\DinoBehavior-190762.onnx",
+                "reward": null,
+                "creation_time": 1701285695.5003,
+                "auxillary_file_paths": [
+                    "results\\Run9\\DinoBehavior\\DinoBehavior-190762.pt"
+                ]
+            },
+            {
+                "steps": 499948,
+                "file_path": "results\\Run9\\DinoBehavior\\DinoBehavior-499948.onnx",
+                "reward": null,
+                "creation_time": 1701286186.6899612,
+                "auxillary_file_paths": [
+                    "results\\Run9\\DinoBehavior\\DinoBehavior-499948.pt"
+                ]
+            },
+            {
+                "steps": 500394,
+                "file_path": "results\\Run9\\DinoBehavior\\DinoBehavior-500394.onnx",
+                "reward": -9.199999615550041,
+                "creation_time": 1701286186.7674747,
+                "auxillary_file_paths": [
+                    "results\\Run9\\DinoBehavior\\DinoBehavior-500394.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500394,
+            "file_path": "results\\Run9\\DinoBehavior.onnx",
+            "reward": -9.199999615550041,
+            "creation_time": 1701286186.7674747,
+            "auxillary_file_paths": [
+                "results\\Run9\\DinoBehavior\\DinoBehavior-500394.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

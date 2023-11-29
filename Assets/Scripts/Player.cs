@@ -38,18 +38,25 @@ public class Player : Agent
         gameManager.Start();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Obstacle") && gameManager.isRunning)
+        
+        if (collision.CompareTag("Obstacle") && gameManager.isRunning)
         {
-            SetReward(-10.0f);
+            SetReward(-2.0f);
             gameManager.GameOver();
             EndEpisode();
+        }
+        if (collision.CompareTag("RewardWall"))
+        {
+            AddReward(+0.2f);
         }
     }
 
     public void GiveReward(float r)
     {
-        AddReward(r);
+        //AddReward(r);
     }
 }

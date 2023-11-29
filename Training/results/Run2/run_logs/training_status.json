@@ -1,0 +1,29 @@
+{
+    "DinoBehavior": {
+        "checkpoints": [
+            {
+                "steps": 272249,
+                "file_path": "results\\Run2\\DinoBehavior\\DinoBehavior-272249.onnx",
+                "reward": -6.753846173103039,
+                "creation_time": 1701197417.599045,
+                "auxillary_file_paths": [
+                    "results\\Run2\\DinoBehavior\\DinoBehavior-272249.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 272249,
+            "file_path": "results\\Run2\\DinoBehavior.onnx",
+            "reward": -6.753846173103039,
+            "creation_time": 1701197417.599045,
+            "auxillary_file_paths": [
+                "results\\Run2\\DinoBehavior\\DinoBehavior-272249.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

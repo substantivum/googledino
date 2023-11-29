@@ -302,8 +302,8 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - Obstacle
-  m_RaysPerDirection: 0
-  m_MaxRayDegrees: 0
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 8
   m_SphereCastRadius: 0.5
   m_RayLength: 18
   m_RayLayerMask:
@@ -359,8 +359,8 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - Obstacle
-  m_RaysPerDirection: 0
-  m_MaxRayDegrees: 0
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 8
   m_SphereCastRadius: 0.5
   m_RayLength: 18
   m_RayLayerMask:
@@ -873,7 +873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -23, y: -80}
+  m_AnchoredPosition: {x: -23, y: -550.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &63080543
@@ -1009,7 +1009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -443.89, y: -80}
+  m_AnchoredPosition: {x: -443.89, y: -550.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &78152852
@@ -1249,7 +1249,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1715.8901, y: -181.00012}
+  m_AnchoredPosition: {x: -439.5, y: -181.00012}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &127967332
@@ -1378,19 +1378,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ed124764961ad448c53eb4fae9dd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1072796266}
+  gameManager: {fileID: 1039805157}
   objects:
-  - prefab: {fileID: 7107021355803009599, guid: de3d2d4d06f99cb40b7f82288f33be23, type: 3}
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.2
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.18
-  - prefab: {fileID: 4585291162624684408, guid: d72ffe5742dc5644f9b7811bc5902544, type: 3}
-    spawnChance: 0.16
   - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
+    spawnChance: 0.16
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.14
-  - prefab: {fileID: 2766542164777084486, guid: 023401264db5d5845910c2dd6aebe94b, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.12
-  - prefab: {fileID: 6986889705306934709, guid: 08ed12203108f4348b9b161cbd1f3be1, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.1
   - prefab: {fileID: 2405153552514564903, guid: 51de68f9dac00e34bb4ef4675174571b, type: 3}
     spawnChance: 0.05
@@ -1445,7 +1445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1715.8901, y: -80}
+  m_AnchoredPosition: {x: -440.9, y: -80}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &192977730
@@ -1592,8 +1592,8 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - Obstacle
-  m_RaysPerDirection: 0
-  m_MaxRayDegrees: 0
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 8
   m_SphereCastRadius: 0.5
   m_RayLength: 18
   m_RayLayerMask:
@@ -1765,19 +1765,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ed124764961ad448c53eb4fae9dd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1497617786}
+  gameManager: {fileID: 1039805157}
   objects:
-  - prefab: {fileID: 7107021355803009599, guid: de3d2d4d06f99cb40b7f82288f33be23, type: 3}
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.2
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.18
-  - prefab: {fileID: 4585291162624684408, guid: d72ffe5742dc5644f9b7811bc5902544, type: 3}
-    spawnChance: 0.16
   - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
+    spawnChance: 0.16
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.14
-  - prefab: {fileID: 2766542164777084486, guid: 023401264db5d5845910c2dd6aebe94b, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.12
-  - prefab: {fileID: 6986889705306934709, guid: 08ed12203108f4348b9b161cbd1f3be1, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.1
   - prefab: {fileID: 2405153552514564903, guid: 51de68f9dac00e34bb4ef4675174571b, type: 3}
     spawnChance: 0.05
@@ -2051,7 +2051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &343937150
 Transform:
   m_ObjectHideFlags: 0
@@ -2061,7 +2061,7 @@ Transform:
   m_GameObject: {fileID: 343937149}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.18, y: 0, z: 0}
+  m_LocalPosition: {x: 0.2, y: 16.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2101,19 +2101,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ed124764961ad448c53eb4fae9dd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1072819226}
+  gameManager: {fileID: 1039805157}
   objects:
-  - prefab: {fileID: 7107021355803009599, guid: de3d2d4d06f99cb40b7f82288f33be23, type: 3}
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.2
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.18
-  - prefab: {fileID: 4585291162624684408, guid: d72ffe5742dc5644f9b7811bc5902544, type: 3}
-    spawnChance: 0.16
   - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
+    spawnChance: 0.16
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.14
-  - prefab: {fileID: 2766542164777084486, guid: 023401264db5d5845910c2dd6aebe94b, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.12
-  - prefab: {fileID: 6986889705306934709, guid: 08ed12203108f4348b9b161cbd1f3be1, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.1
   - prefab: {fileID: 2405153552514564903, guid: 51de68f9dac00e34bb4ef4675174571b, type: 3}
     spawnChance: 0.05
@@ -2598,7 +2598,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 432b2762dd589844ebc603e19c9483ab, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: DinoBehavior
@@ -2749,7 +2749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &451409603
 Transform:
   m_ObjectHideFlags: 0
@@ -2804,7 +2804,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -232.19006, y: -80}
+  m_AnchoredPosition: {x: -232.19006, y: -550.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &463211198
@@ -2967,7 +2967,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 17.044222
+  orthographic size: 19.09798
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2993,7 +2993,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 16.65, y: 14.93, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.3625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3243,7 +3243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -443.89, y: -28.299988}
+  m_AnchoredPosition: {x: -443.89, y: -505.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &537493429
@@ -3377,7 +3377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -23, y: -129}
+  m_AnchoredPosition: {x: -23, y: -597.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &538715423
@@ -3494,7 +3494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &570233592
 Transform:
   m_ObjectHideFlags: 0
@@ -3504,7 +3504,7 @@ Transform:
   m_GameObject: {fileID: 570233591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.18, y: 12, z: 0}
+  m_LocalPosition: {x: 0.2, y: 30.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3655,7 +3655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1295, y: -28.3}
+  m_AnchoredPosition: {x: -31.400024, y: -28.299988}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &595850525
@@ -4044,8 +4044,8 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - Obstacle
-  m_RaysPerDirection: 0
-  m_MaxRayDegrees: 0
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 8
   m_SphereCastRadius: 0.5
   m_RayLength: 18
   m_RayLayerMask:
@@ -4088,7 +4088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1295.0001, y: -181}
+  m_AnchoredPosition: {x: -23.400024, y: -181}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &633196885
@@ -4224,7 +4224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -23, y: -28.3}
+  m_AnchoredPosition: {x: -23, y: -505.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &684764527
@@ -4569,17 +4569,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1039805157}
   objects:
-  - prefab: {fileID: 7107021355803009599, guid: de3d2d4d06f99cb40b7f82288f33be23, type: 3}
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.2
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.18
-  - prefab: {fileID: 4585291162624684408, guid: d72ffe5742dc5644f9b7811bc5902544, type: 3}
-    spawnChance: 0.16
   - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
+    spawnChance: 0.16
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.14
-  - prefab: {fileID: 2766542164777084486, guid: 023401264db5d5845910c2dd6aebe94b, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.12
-  - prefab: {fileID: 6986889705306934709, guid: 08ed12203108f4348b9b161cbd1f3be1, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.1
   - prefab: {fileID: 2405153552514564903, guid: 51de68f9dac00e34bb4ef4675174571b, type: 3}
     spawnChance: 0.05
@@ -4634,7 +4634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1295.0001, y: -80}
+  m_AnchoredPosition: {x: -28.8, y: -80}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &741053299
@@ -5345,7 +5345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -232.19006, y: -28.299988}
+  m_AnchoredPosition: {x: -232.19006, y: -505.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &834552710
@@ -5864,7 +5864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -232.19006, y: -129.00003}
+  m_AnchoredPosition: {x: -232.19006, y: -597.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &927248497
@@ -6175,7 +6175,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 432b2762dd589844ebc603e19c9483ab, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: DinoBehavior
@@ -6659,7 +6659,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 432b2762dd589844ebc603e19c9483ab, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: DinoBehavior
@@ -6817,7 +6817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1057101352
 Transform:
   m_ObjectHideFlags: 0
@@ -6827,7 +6827,7 @@ Transform:
   m_GameObject: {fileID: 1057101351}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.18, y: 8, z: 0}
+  m_LocalPosition: {x: 0.2, y: 25.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7119,7 +7119,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1504.1902, y: -129.00003}
+  m_AnchoredPosition: {x: -233, y: -129.00003}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1088996970
@@ -7255,7 +7255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1504.1902, y: -80}
+  m_AnchoredPosition: {x: -235, y: -80}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1090014160
@@ -7391,7 +7391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1295.0001, y: -129}
+  m_AnchoredPosition: {x: -24.400024, y: -129}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1145763526
@@ -7540,8 +7540,8 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - Obstacle
-  m_RaysPerDirection: 0
-  m_MaxRayDegrees: 0
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 8
   m_SphereCastRadius: 0.5
   m_RayLength: 18
   m_RayLayerMask:
@@ -7579,19 +7579,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ed124764961ad448c53eb4fae9dd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1629750673}
+  gameManager: {fileID: 1039805157}
   objects:
-  - prefab: {fileID: 7107021355803009599, guid: de3d2d4d06f99cb40b7f82288f33be23, type: 3}
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.2
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.18
-  - prefab: {fileID: 4585291162624684408, guid: d72ffe5742dc5644f9b7811bc5902544, type: 3}
-    spawnChance: 0.16
   - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
+    spawnChance: 0.16
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.14
-  - prefab: {fileID: 2766542164777084486, guid: 023401264db5d5845910c2dd6aebe94b, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.12
-  - prefab: {fileID: 6986889705306934709, guid: 08ed12203108f4348b9b161cbd1f3be1, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.1
   - prefab: {fileID: 2405153552514564903, guid: 51de68f9dac00e34bb4ef4675174571b, type: 3}
     spawnChance: 0.05
@@ -7646,7 +7646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1715.8901, y: -129.00003}
+  m_AnchoredPosition: {x: -439.5, y: -129.00003}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1355175363
@@ -7780,7 +7780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -232.19006, y: -181.00012}
+  m_AnchoredPosition: {x: -232.19006, y: -652.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1369807131
@@ -7929,8 +7929,8 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - Obstacle
-  m_RaysPerDirection: 0
-  m_MaxRayDegrees: 0
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 8
   m_SphereCastRadius: 0.5
   m_RayLength: 18
   m_RayLayerMask:
@@ -8116,7 +8116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1504.1902, y: -181.00012}
+  m_AnchoredPosition: {x: -231, y: -181.00012}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1443123731
@@ -8252,7 +8252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1715.8901, y: -28.299988}
+  m_AnchoredPosition: {x: -442.1, y: -28.299988}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1452622384
@@ -8996,7 +8996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1554334492
 Transform:
   m_ObjectHideFlags: 0
@@ -9006,7 +9006,7 @@ Transform:
   m_GameObject: {fileID: 1554334491}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.18, y: 4, z: 0}
+  m_LocalPosition: {x: 0.2, y: 21.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9103,7 +9103,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -443.89, y: -129.00003}
+  m_AnchoredPosition: {x: -443.89, y: -597.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1633785534
@@ -9371,7 +9371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -23, y: -181}
+  m_AnchoredPosition: {x: -23, y: -652.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1689282064
@@ -9559,7 +9559,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1504.1902, y: -28.299988}
+  m_AnchoredPosition: {x: -235.3, y: -28.299988}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1757280514
@@ -10108,7 +10108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1856543267
 Transform:
   m_ObjectHideFlags: 0
@@ -10158,19 +10158,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ed124764961ad448c53eb4fae9dd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1005787441}
+  gameManager: {fileID: 1039805157}
   objects:
-  - prefab: {fileID: 7107021355803009599, guid: de3d2d4d06f99cb40b7f82288f33be23, type: 3}
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.2
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.18
-  - prefab: {fileID: 4585291162624684408, guid: d72ffe5742dc5644f9b7811bc5902544, type: 3}
-    spawnChance: 0.16
   - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
+    spawnChance: 0.16
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.14
-  - prefab: {fileID: 2766542164777084486, guid: 023401264db5d5845910c2dd6aebe94b, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.12
-  - prefab: {fileID: 6986889705306934709, guid: 08ed12203108f4348b9b161cbd1f3be1, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.1
   - prefab: {fileID: 2405153552514564903, guid: 51de68f9dac00e34bb4ef4675174571b, type: 3}
     spawnChance: 0.05
@@ -10372,8 +10372,8 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - Obstacle
-  m_RaysPerDirection: 0
-  m_MaxRayDegrees: 0
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 8
   m_SphereCastRadius: 0.5
   m_RayLength: 18
   m_RayLayerMask:
@@ -10411,19 +10411,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ed124764961ad448c53eb4fae9dd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1753763941}
+  gameManager: {fileID: 1039805157}
   objects:
-  - prefab: {fileID: 7107021355803009599, guid: de3d2d4d06f99cb40b7f82288f33be23, type: 3}
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.2
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.18
-  - prefab: {fileID: 4585291162624684408, guid: d72ffe5742dc5644f9b7811bc5902544, type: 3}
-    spawnChance: 0.16
   - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
+    spawnChance: 0.16
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.14
-  - prefab: {fileID: 2766542164777084486, guid: 023401264db5d5845910c2dd6aebe94b, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.12
-  - prefab: {fileID: 6986889705306934709, guid: 08ed12203108f4348b9b161cbd1f3be1, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.1
   - prefab: {fileID: 2405153552514564903, guid: 51de68f9dac00e34bb4ef4675174571b, type: 3}
     spawnChance: 0.05
@@ -10593,7 +10593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1943287789
 Transform:
   m_ObjectHideFlags: 0
@@ -10775,19 +10775,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ed124764961ad448c53eb4fae9dd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1994450267}
+  gameManager: {fileID: 1039805157}
   objects:
-  - prefab: {fileID: 7107021355803009599, guid: de3d2d4d06f99cb40b7f82288f33be23, type: 3}
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.2
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.18
-  - prefab: {fileID: 4585291162624684408, guid: d72ffe5742dc5644f9b7811bc5902544, type: 3}
-    spawnChance: 0.16
   - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
+    spawnChance: 0.16
+  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.14
-  - prefab: {fileID: 2766542164777084486, guid: 023401264db5d5845910c2dd6aebe94b, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.12
-  - prefab: {fileID: 6986889705306934709, guid: 08ed12203108f4348b9b161cbd1f3be1, type: 3}
+  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.1
   - prefab: {fileID: 2405153552514564903, guid: 51de68f9dac00e34bb4ef4675174571b, type: 3}
     spawnChance: 0.05
@@ -11182,8 +11182,8 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - Obstacle
-  m_RaysPerDirection: 0
-  m_MaxRayDegrees: 0
+  m_RaysPerDirection: 2
+  m_MaxRayDegrees: 8
   m_SphereCastRadius: 0.5
   m_RayLength: 18
   m_RayLayerMask:
@@ -11226,7 +11226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -443.89, y: -181.00012}
+  m_AnchoredPosition: {x: -443.89, y: -652.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &2068097286

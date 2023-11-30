@@ -4569,7 +4569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1039805157}
   objects:
-  - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
+  - prefab: {fileID: 7107021355803009599, guid: de3d2d4d06f99cb40b7f82288f33be23, type: 3}
     spawnChance: 0.2
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.18
@@ -4577,7 +4577,7 @@ MonoBehaviour:
     spawnChance: 0.16
   - prefab: {fileID: 3415585138056271106, guid: 72db958df8587d940aaff643791d2cf2, type: 3}
     spawnChance: 0.14
-  - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
+  - prefab: {fileID: 4585291162624684408, guid: d72ffe5742dc5644f9b7811bc5902544, type: 3}
     spawnChance: 0.12
   - prefab: {fileID: 8840572191449686385, guid: 208839014de001f4683c728ab8609eac, type: 3}
     spawnChance: 0.1
